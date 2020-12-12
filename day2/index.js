@@ -5,7 +5,7 @@ var content = fs.readFileSync("./input.txt", "utf8");
 
 var input = content.split("\r\n");
 
-// console.log(input);
+
 
 var records = input.map(function(row) {
     var rowParts = row.split(":"); 
@@ -26,7 +26,11 @@ var records = input.map(function(row) {
 
 });
 
-// console.log(records);
+
+
+/**
+ * Part1
+ */
 
 
 var checkPasswordRecord1 = function(record) {
@@ -48,6 +52,11 @@ var checkPasswordRecord1 = function(record) {
 
 
 
+/**
+ * Part2
+ */
+
+
 var checkPasswordRecord2 = function(record) {
 
     var letters = record.password.split("");
@@ -58,9 +67,6 @@ var checkPasswordRecord2 = function(record) {
     return (minCheck + maxCheck) % 2 === 1;
     
 };
-
-
-
 
 
 var validRecordsNum = records.reduce(function(acc, record) {

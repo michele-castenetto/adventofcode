@@ -46,6 +46,11 @@ var traverseTerrain = function(terrain, direction) {
 
 
 
+/**
+ * Part1
+ */
+
+
 // var travel = traverseTerrain(terrain, {
 //     x: 3,
 //     y: 1
@@ -56,6 +61,13 @@ var traverseTerrain = function(terrain, direction) {
 // }, 0);
 
 // console.log(hitTreeNum);
+
+
+
+
+/**
+ * Part2
+ */
 
 
 var directions = [

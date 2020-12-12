@@ -6,6 +6,11 @@ var content = fs.readFileSync("./input.txt", "utf8");
 var input = content.split("\r\n");
 
 
+/**
+ * Part1
+ */
+
+
 var findTwoNumbers = function(nums) {
     
     nums = nums.sort(function(n1, n2) {
@@ -42,6 +47,22 @@ var findTwoNumbers = function(nums) {
     return result;
 
 };
+
+// var solutions = findTwoNumbers(input);
+
+// console.log("SOLUTIONS:");
+// console.log(solutions);
+
+// solutions.forEach(function(solution) {
+//     console.log(solution.n1 * solution.n2);
+// });
+
+
+
+
+/**
+ * Part2
+ */
 
 
 var findThreeNumbers = function(nums) {
@@ -86,18 +107,6 @@ var findThreeNumbers = function(nums) {
     return result;
 
 };
-
-
-// var solutions = findTwoNumbers(input);
-
-// console.log("SOLUTIONS:");
-// console.log(solutions);
-
-
-// solutions.forEach(function(solution) {
-//     console.log(solution.n1 * solution.n2);
-// });
-
 
 
 var solutions = findThreeNumbers(input);
